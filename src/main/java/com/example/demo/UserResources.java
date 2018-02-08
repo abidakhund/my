@@ -33,7 +33,7 @@ public class UserResources
     {
         System.out.println("run"+user.getFirstName());
         if(user.getFirstName() == null || user.getLastName() == null) {
-            return Response.status(400).entity("Please provide all mandatory inputs").build();
+            return Response.status(400).entity("Please providejkh all mandatory inputs").build();
         }
         user.setId(DB.values().size()+1);
         user.setUri("/user-management/"+user.getId());
