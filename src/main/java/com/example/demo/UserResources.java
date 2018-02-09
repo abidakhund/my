@@ -48,6 +48,7 @@ public class UserResources
     {
         User user = DB.get(id);
         if(user == null) {
+            System.out.println("tess");
             return Response.status(404).build();
         }
         return Response
